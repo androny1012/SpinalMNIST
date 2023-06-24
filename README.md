@@ -35,12 +35,11 @@ Verilator仿真速度还可以，10000张图片全部仿真不到两分钟，仿
 
 本项目生成的Verilog已经使用Xilinx ZYNQ器件进行上板部署验证，因为用的是Spinal中的FLOW接口，可以改一改以兼容AXI-Stream，使用AXI-DMA在ZYNQ上进行部署。
 
-![image-20230624101125388](.\readme.assets\image-20230624101125388.png)
+<img src=".\readme.assets\image-20230624101125388.png" alt="image-20230624102325391" style="zoom: 50%;" />
 
 时序通过，资源方面由于没有使用DSP对乘法进行计算，导致资源消耗偏多，还有待优化。
 
-![image-20230624101147842](.\readme.assets\image-20230624101147842.png)
-
+<img src=".\readme.assets\image-20230624101147842.png" alt="image-20230624102325391" style="zoom: 50%;" />
 
 
 准确率88.56%（？比仿真还高，可能是操作没完全对齐），平均每次推理耗时约0.7ms。
