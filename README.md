@@ -12,6 +12,7 @@ run:
 
 ```
 git clone https://github.com/androny1012/SpinalMNIST.git
+cd SpinalMNIST
 sbt run
 ```
 
