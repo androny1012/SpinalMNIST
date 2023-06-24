@@ -11,7 +11,7 @@
 run:
 
 ```
-git clone https://github.com/SpinalHDL/SpinalTemplateSbt.git
+git clone https://github.com/androny1012/SpinalMNIST.git
 sbt run
 ```
 
