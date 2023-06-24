@@ -29,23 +29,23 @@ MnistTop - Generate Verilog  生成Verilog代码
 
 Verilator仿真速度还可以，10000张图片全部仿真不到两分钟，仿真准确率88.12%
 
-<img src="E:\file_share\ic\spinal\readme.assets\image-20230624102325391.png" alt="image-20230624102325391" style="zoom: 50%;" />
+<img src=".\readme.assets\image-20230624102325391.png" alt="image-20230624102325391" style="zoom: 50%;" />
 
 
 
 本项目生成的Verilog已经使用Xilinx ZYNQ器件进行上板部署验证，因为用的是Spinal中的FLOW接口，可以改一改以兼容AXI-Stream，使用AXI-DMA在ZYNQ上进行部署。
 
-![image-20230624101125388](E:\file_share\ic\spinal\readme.assets\image-20230624101125388.png)
+![image-20230624101125388](.\readme.assets\image-20230624101125388.png)
 
 时序通过，资源方面由于没有使用DSP对乘法进行计算，导致资源消耗偏多，还有待优化。
 
-![image-20230624101147842](E:\file_share\ic\spinal\readme.assets\image-20230624101147842.png)
+![image-20230624101147842](.\readme.assets\image-20230624101147842.png)
 
 
 
 准确率88.56%（？比仿真还高，可能是操作没完全对齐），平均每次推理耗时约0.7ms。
 
-<img src="E:\file_share\ic\spinal\readme.assets\8d05aafe82ad590ae10b97a5fbf2a71.png" alt="8d05aafe82ad590ae10b97a5fbf2a71" style="zoom:33%;" />
+<img src=".\readme.assets\8d05aafe82ad590ae10b97a5fbf2a71.png" alt="8d05aafe82ad590ae10b97a5fbf2a71" style="zoom:33%;" />
 
 
 
